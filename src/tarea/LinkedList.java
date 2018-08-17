@@ -8,6 +8,8 @@ package tarea;
 /**
  *
  * @author 2112712
+ * clase de manejo y creacion de lista encadenada
+
  */
 public class LinkedList {
     private Nodo nodo;
@@ -17,6 +19,10 @@ public class LinkedList {
     public LinkedList(){
         cabeza=null;
     }
+    /**
+    * Añade un elemento a la lista
+    *@param info info representa los datos que se almacenaran en el nodo que se agregara a la lista
+    */
     public void append(double info){
         if (cabeza==null){
             cabeza=new Nodo(info);
@@ -28,9 +34,15 @@ public class LinkedList {
             cabeza=x;
         }
     }
+        /**
+    *@return retorna la longitud de la lista
+    */
     public int longitud(){
         return len;
     }
+    /** 
+    *@return retorna el nodo cabeza de la lista
+    */
     public Nodo getCabeza(){
         return cabeza;
     }

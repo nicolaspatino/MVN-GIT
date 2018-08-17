@@ -36,6 +36,9 @@ public class Tarea {
        System.out.println("Media "+ mean);
        System.out.println("Desviacion "+ deviation);
     }
+    /**
+    *@return retorna la media de una lista encadenada
+    */
     public static double mean(){
         Nodo temporal=lista.getCabeza();
         int cont=0;
@@ -47,7 +50,9 @@ public class Tarea {
         mean=mean/cont;
         return mean;
     }
-    
+    /**
+    *@return retorna la desviacion estandar de una lista encadenada
+    */
     public static double sdeviation(){
         Nodo temporal=lista.getCabeza();
         int cont=0;
@@ -59,7 +64,9 @@ public class Tarea {
         deviation=Math.sqrt(deviation/(cont-1));
         return  deviation;
     }
-    
+    /**
+    *@param archivo representa el nombre del archivo que se quiere leer para construir la lista encadenada
+    */
     public static void construyeLinkedlist(String archivo) throws FileNotFoundException, IOException {
         String cadena;
         FileReader f = new FileReader(archivo);

@@ -18,9 +18,15 @@ public class Nodo {
         this.next=null;
     
     }
+/** 
+*@return retorna la referencia al nodo siguiente
+*/
 public Nodo getNext(){
     return next;
 }
+/** 
+*@return retorna los datos del nodo
+*/
 public double getDatos(){
     return datos;
 }
